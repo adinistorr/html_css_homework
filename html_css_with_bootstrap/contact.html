@@ -4,45 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
-    <header class="header">
-        <div class="title">Contact us</div>
-        <div class="description">Feel free to contact us</div>
+    <header class="d-flex flex-wrap align-items-baseline bg-light p-5">
+        <div class="h1 my-0 mx-auto my-sm-0 ml-sm-3 mr-sm-2">Contact us</div>
+        <div class="h3 description text-secondary my-0 mx-auto">Feel free to contact us</div>
     </header>
-
-    <form action="" class="container container-form">
-        <div class="form">
-            <div class="inputs">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter name">
-                <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Enter email">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" placeholder="Enter subject">
-            </div>
-            <div class="message">
-                <label for="message">Message</label>
-                <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+    
+    <div class="container pt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-8">
+                <div class="well well-sm">
+                    <form>
+                    <div class="row bg-light p-2">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    Email Address</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                    </span>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Enter Subject" required="required" >
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Message</label>
+                                <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                    placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 d-flex justify-content-center justify-content-sm-end">
+                            <button type="submit" class="submit btn btn-primary" id="btnContactUs">
+                                Send Message</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="submit">
-            <button id="btn-submit">Send Message</button>
-        </div>
-    </form>
+    </div>
 
-    <section class="container social">
-        <div class="social-message">
+    <section class="container d-flex flex-column align-items-center pb-3">
+        <div class="text-center border-bottom border-secondary mb-3 pt-3 w-100 col-sm-6">
             Or find us on social media
         </div>
-        <div class="social-links">
+        <div class="d-flex flex-wrap justify-content-between w-100 col-sm-6">
             <a href="#">Facebook</a>
             <a href="#">Twitter</a>
             <a href="#">Instagram</a>
         </div>
     </section>
-
-        
 </body>
 </html>
